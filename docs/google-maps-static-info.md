@@ -11,6 +11,8 @@ AIzaSyD3moXf7DqfjHWQdAtGD-3Iajitw-J2ANw
 
 * Max size: 640x640px
 * Min width: 180px
+
+
 Exempelrutt:
 ```
 https://maps.googleapis.com/maps/api/staticmap?
