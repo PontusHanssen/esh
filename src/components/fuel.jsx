@@ -7,11 +7,11 @@ export default class Fuel extends Component {
 
     return (
       <div>
-     	<Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+     	<Card shadow={0} style={{width: '100%', margin: 'auto'}}>
     	<CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.publicdomainpictures.net/pictures/50000/velka/fuel-gauge.jpg) center / cover'}}>Fuel Consumption</CardTitle>
     	<CardText>
-    	<LineChart width={450} height={200} data={data}
-  			margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
+    	<LineChart width={500} height={200} data={data}
+  			margin={{ top: 5, right: 50, left: 5, bottom: 5 }}>
   			<XAxis dataKey="name" />
   			<YAxis />
   			<CartesianGrid strokeDasharray="3 3" />
