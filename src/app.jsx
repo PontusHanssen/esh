@@ -43,10 +43,10 @@ class App extends Component {
               <a href="">Settings</a>
             </Navigation>
           </Drawer>
-        </Layout>
           <Content style={{ width: '100%', top: '310px', position: 'absolute'}}>
             {this.props.children}
           </Content>
+        </Layout>
       </div>
     );
   }
