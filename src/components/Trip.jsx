@@ -18,7 +18,7 @@ export default class Trip extends Component {
         <Card header={
           <CardTitle style={{color: "#000"}} image={this.trip.img}></CardTitle>
         }
-      >
+        
         <ul>
           <li>{this.trip.time}</li>
           <li>{this.trip.duration} minutes</li>
@@ -28,6 +28,7 @@ export default class Trip extends Component {
         </ul>
       </Card>
     </Col>
+
 
     );
   }

@@ -8,9 +8,6 @@ export default class Points extends Component {
 		super();
 	}	
 	render() {
-		trips.forEach(function (trip){
-			console.log(trip.points);
-		});
 
 		return (
 			<Row>
