@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Card, CardTitle, CardPanel, Button, Col} from 'react-materialize';
-import {AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area} from 'recharts';
+import {AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area, ResponsiveContainer} from 'recharts';
 
 export default class Fuel extends Component {
   render() { 
@@ -9,17 +9,22 @@ export default class Fuel extends Component {
     {name: 'thur', value: 45}, {name: 'fri', value: 15}, {name: 'sat', value: 80}, {name: 'sun', value: 15}];
   
     return (
-      <Col s={12} m={8} l={4}>
-      <Card>
-      <CardTitle image="fuel.jpg">Fuel Consumption</CardTitle>
-      <AreaChart width={400} height={150} data={data}
-        margin={{ top: 20, right: 50, left: 5, bottom: 5 }}>
-        <XAxis dataKey="name" />
-        <YAxis />
-        <CartesianGrid strokeDasharray="3 3" />
-        <Tooltip />
-        <Area type="monotone" dataKey="value" stroke="#8884d8" />
-      </AreaChart>
+      <Col s={12} m={10} l={8}>
+      <Card header={
+        <CardTitle style={{height: "150px", overflow: "hidden"}} image={
+            "http://www.publicdomainpictures.net/pictures/50000/velka/fuel-gauge.jpg"
+          }> Fuel Consumption</CardTitle>}>
+
+        <ResponsiveContainer height={200}>
+        <AreaChart data={data}
+          margin={{ top: 20, right: 50, left: 5, bottom: 5 }}>
+          <XAxis dataKey="name" />
+          <YAxis />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Tooltip />
+          <Area type="monotone" dataKey="value" stroke="#8884d8" />
+        </AreaChart>
+        </ResponsiveContainer>
       </Card>
     </Col>
     );
