@@ -17,15 +17,14 @@ export default class Velocity extends Component {
     let randomtrip =  Math.floor(Math.random() * (7));
 
     this.velocityTimer = setInterval(() => {
-     var speed =  Math.floor(Math.random() * (99 - 91)) + 91;
-     this.velocityOk = this.state.velocity <=  speed;
-      
-      //Generate random trip.
-     //Get map points, loop through one point per step
+     
+    let mappoint = trips[randomtrip].mapPoints[indexMapPoint];  
+    indexMapPoint = indexMapPoint + 1; 
 
-     let mappoint = trips[randomtrip].mapPoints[indexMapPoint];  
+    if(indexMapPoint>=mappoint.length){
+      indexMapPoint = 0;
+    }
 
-     indexMapPoint = indexMapPoint + 1; //KAN BUGGA SÅ LOOPA INTE FÖR LÅNGT!!!!1
 
     request.get('http://opendata-download-metfcst.smhi.se/api/category/pmp2g/version/2/geotype/point/lon/'+ mappoint.long + '/lat/'+ mappoint.lat + '/data.json')
       .then((res) => {
@@ -37,9 +36,12 @@ export default class Velocity extends Component {
         this.setState({'conditions': conditions});
       });
 
-     //Get condition for that coordinate
+     
+     var speed =  Math.floor(Math.random() * (99 - 66)) + 66;
+     this.velocityOk = speed <=  this.state.maxVelocity;
      this.setState({'velocity': speed}); 
-    }, 5000);
+    }, 3000);
+
     this.maxSpeedTimer = setInterval(() => {
       var maxSpeed = Math.floor(Math.random() * (90 - 69)) + 69;
       this.velocityOk = this.state.velocity <=  maxSpeed;
@@ -63,7 +65,7 @@ export default class Velocity extends Component {
     }else{
       friction = 0.8;
     }
-    
+          
     var distance = 10;
     var reactionTime = 1; 
     var actualStoppingTime = (reactionTime*this.state.velocity/3.6 + Math.pow(this.state.velocity, 2)/250*friction);
@@ -77,10 +79,12 @@ export default class Velocity extends Component {
       Increased stopping distance (m): <h5>{Math.floor(actualStoppingTime - possibleStoppingTime)}</h5> 
       Saved time driving 10 km (s): <h5>{Math.floor(savedTime)}</h5></div>;
     }
+
+    //Change message directly, as of now it can be 
     return (
       <Col s={12} m={10} l={10}>
       <Card>
-      {message}
+      {message} 
       </Card>
     </Col>
     );
