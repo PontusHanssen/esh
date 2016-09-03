@@ -1,6 +1,6 @@
 .points-card{
 	width: 100%;
-	height: 400px; 
+	height: 400px;
 	margin:auto;
 }
 
@@ -13,8 +13,10 @@ h2{
 	color: black;
 }
 
-.main {
-	padding-left: 240px;
+
+.main > .container {
+  width: 95% !important;
+
 }
 
 nav {
@@ -61,4 +63,14 @@ nav .nav-wrapper {
 }
 .center-text{
 	text-align: center;
+}
+
+.recharts-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 978px){
+.main {
+	padding-left: 240px;
 }

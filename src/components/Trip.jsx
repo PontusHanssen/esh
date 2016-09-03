@@ -14,16 +14,16 @@ export default class Trip extends Component {
 
   render(){
     return(
-      <Col l={12} s={12} m={12}>
+      <Col l={4} s={6} m={4}>
         <Card header={
-          <CardTitle style={{color: "#000"}} image={this.trip.img}></CardTitle>
+          <CardTitle style={{color: "#000"}} image={this.trip.img}><p style={{color: '#000'}}>Last Trip</p></CardTitle>
         }>
         <ul>
-          <li>{this.trip.time}</li>
-          <li>{this.trip.duration} minutes</li>
-          <li>{this.trip.distance} km </li>
-          <li>{this.trip.consumption} l/km</li>
-          <li><strong>{this.trip.pointsi} points</strong></li>
+          <li><i className="material-icons" style={{'vertical-align': 'middle'}}>event</i>{this.trip.time}</li>
+          <li><i className="material-icons" style={{'vertical-align': 'middle'}}>schedule</i>{this.trip.duration} minutes</li>
+          <li><i className="material-icons" style={{'vertical-align': 'middle'}}>place</i>{this.trip.distance} km </li>
+          <li><i className="material-icons" style={{'vertical-align': 'middle'}}>ev_station</i>{this.trip.consumption} l/km</li>
+          <li><strong><i className="material-icons" style={{'vertical-align': 'middle'}}>star</i>{this.trip.points} points</strong></li>
         </ul>
       </Card>
     </Col>
