@@ -7,6 +7,7 @@ export default class Acceleration extends Component {
   
   constructor(props){
     super(props);
+    
     this.state = {'conditions': []};
   }
 
