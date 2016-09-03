@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute, Router, Route, hashHistory, Link } from 'react-router';
-import { } from 'react-materialize';
 import activeComponent from 'react-router-active-component'
 import Dashboard from './components/Dashboard';
 import Timeline from './components/timeline';
