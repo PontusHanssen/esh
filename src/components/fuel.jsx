@@ -10,8 +10,7 @@ export default class Fuel extends Component {
 
     return (
       <Col s={6} m={4} l={4}>
-        <Card actions={[<a href='#'>Previous week</a>, <a href='#'>Next week</a>]}>
-          <h3>Fuel Consumption</h3>
+        <Card className={'card2'} actions={[<a href='#'>Previous week</a>, <a href='#'>Next week</a>]} title="Fuel Consumption">
           <ResponsiveContainer height={200}>
             <AreaChart data={data}
               margin={{ top: 20, right: 50, left: 5, bottom: 5 }}>
