@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { IndexRoute, Router, Route, hashHistory } from 'react-router';
+import { IndexRoute, Router, Route, hashHistory, Link } from 'react-router';
 import { Content, Drawer, Header, Layout, Navigation } from 'react-mdl';
-import Index from './components/index';
+import Dashboard from './components/Dashboard';
+import Trip from './components/Trip';
 
 class App extends Component {
+
   render() {
     return (
       <div style={{height: '300px', position: 'relative'}}>
@@ -25,10 +27,10 @@ class App extends Component {
               <a href="">Link</a>
             </Navigation>
           </Drawer>
-          <Content>
+        </Layout>
+          <Content style={{ width: '100%', top: '310px', position: 'absolute'}}>
             {this.props.children}
           </Content>
-        </Layout>
       </div>
     );
   }
@@ -37,8 +39,8 @@ class App extends Component {
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={Index} />
-      <Route path="test" component={Index} />
+      <IndexRoute component={Dashboard} />
+      <Route path="test" component={Trip} />
     </Route>
   </Router>
 ), document.getElementById('root'));
