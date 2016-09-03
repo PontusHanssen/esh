@@ -34,7 +34,6 @@ export default class Velocity extends Component {
         data.timeSeries.forEach(function(forecast){
           conditions.push(forecast.parameters[18].values[0]); //Wsymb see http://opendata.smhi.se/apidocs/metanalys/parameters.html#parameter-wsymb
         });
-        console.log(conditions);
         this.setState({'conditions': conditions});
       });
 
