@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute, Router, Route, hashHistory, Link } from 'react-router';
-import { Navbar } from 'react-materialize';
+import { NavItem } from 'react-materialize';
 import Dashboard from './components/Dashboard';
 import Timeline from './components/timeline';
 
@@ -35,10 +35,17 @@ class App extends Component {
           </a>
         </div>
         <ul id="nav-mobile" className="side-nav fixed">
-          <li><a href="#!"><i className="material-icons">cloud</i>First Link With Icon</a></li>
-          <li><a href="#!">Second Link</a></li>
+          <li>
+            <div style={{'padding-left': 60, 'padding-top': 20}}>
+              <img src="https://getmdl.io/templates/dashboard/images/user.jpg" alt="" className="circle responsive-img" />
+            </div>
+          </li>
+          <li>
+            <i className="material-icons" style={{'vertical-align': 'middle', 'padding-left': 20, 'padding-right': 5}}>person</i>
+            test@test.com
+            <i className="material-icons" style={{'vertical-align': 'middle'}}>arrow_drop_down</i>
+          </li>
           <li><div className="divider"></div></li>
-          <li><a className="subheader">Subheader</a></li>
           <li><a href="">Dashboard</a></li>
           <li><a href="">Timeline</a></li>
           <li><a href="">Social</a></li>

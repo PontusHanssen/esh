@@ -3,7 +3,7 @@ export let trips = [
   {"time": "2016-08-01 08:00:00",
     "distance": "10000.2", 
     "duration": "15", 
-    "map" : [
+    "mapPoints" : [
       {"lat": 58.395705, "long": 15.553603},
       {"lat": 58.495705, "long": 15.553603},
       {"lat": 58.595705, "long": 15.553603},
@@ -23,7 +23,7 @@ export let trips = [
   {"time": "2016-08-01 17:00:00",
     "distance": "10000.2", 
     "duration": "12", 
-    "map" : [
+    "mapPoints" : [
       {"lat": 58.695705, "long": 15.503603},
       {"lat": 58.695705, "long": 15.053603},
       {"lat": 58.695705, "long": 15.153603},
@@ -43,7 +43,7 @@ export let trips = [
   {"time": "2016-08-02 08:00:00",
     "distance": "1500.2", 
     "duration": "20", 
-    "map" : [
+    "mapPoints" : [
       {"lat": 60.395705, "long": 15.553603},
       {"lat": 60.495705, "long": 15.553603},
       {"lat": 60.595705, "long": 15.553603},
@@ -63,7 +63,7 @@ export let trips = [
   {"time": "2016-08-03 08:00:00",
     "distance": "10000.2", 
     "duration": "15", 
-    "map" : [
+    "mapPoints" : [
       {"lat": 58.395705, "long": 15.553603},
       {"lat": 58.495705, "long": 15.553603},
       {"lat": 58.595705, "long": 15.553603},
@@ -83,7 +83,7 @@ export let trips = [
   {"time": "2016-08-04 08:00:00",
     "distance": "10000.2", 
     "duration": "15", 
-    "map" : [
+    "mapPoints" : [
       {"lat": 58.395705, "long": 15.553603},
       {"lat": 58.495705, "long": 15.553603},
       {"lat": 58.595705, "long": 15.553603},
@@ -103,7 +103,7 @@ export let trips = [
   {"time": "2016-08-05 08:00:00",
     "distance": "10000.2", 
     "duration": "15", 
-    "map" : [
+    "mapPoints" : [
       {"lat": 58.395705, "long": 15.553603},
       {"lat": 58.495705, "long": 15.553603},
       {"lat": 58.595705, "long": 15.553603},
@@ -123,7 +123,7 @@ export let trips = [
   {"time": "2016-08-07 08:00:00",
     "distance": "10000.2", 
     "duration": "15", 
-    "map" : [
+    "mapPoints" : [
       {"lat": 58.395705, "long": 15.553603},
       {"lat": 58.495705, "long": 15.553603},
       {"lat": 58.595705, "long": 15.553603},
