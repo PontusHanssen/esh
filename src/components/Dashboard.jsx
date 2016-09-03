@@ -11,15 +11,12 @@ import { trips } from '../data/trips';
 export default class Dashboard extends Component {
   render() {
     return (
-      <div style={{width: '80%', margin: 'auto'}}>
         <Row className={'dashboardGrid'}>
           <Velocity />
           <Trip trip={trips[0]}/>
           <Fuel />
         <Points></Points>
-        <Acceleration />
         </Row>
-      </div>
       );
   }
 }
