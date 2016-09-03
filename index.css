@@ -1,0 +1,14 @@
+.points-card{
+	width: 80%;
+	height: 400px; 
+	margin:auto;
+}
+
+.points-cardtitle{
+	background: black; 
+	height: 176px;
+}
+
+h2{
+	color: white;
+}

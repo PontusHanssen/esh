@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Trip from './Trip';
 import Fuel from './fuel';
+import Points from './points';
 
 export default class Dashboard extends Component {
   render() {
@@ -10,6 +11,7 @@ export default class Dashboard extends Component {
         <Grid className={'dashboardGrid'}>
           <Trip />
           <Fuel />
+          <Points />
         </Grid>
       </div>
     );

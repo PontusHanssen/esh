@@ -5,6 +5,7 @@ import { Content, Drawer, Icon, IconButton, Header, Layout, Menu, MenuItem, Navi
 import Dashboard from './components/Dashboard';
 import Trip from './components/Trip';
 
+
 class App extends Component {
 
   render() {
@@ -57,5 +58,6 @@ ReactDOM.render((
       <IndexRoute component={Dashboard} />
       <Route path="test" component={Trip} />
     </Route>
+
   </Router>
 ), document.getElementById('root'));
