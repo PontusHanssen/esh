@@ -4,16 +4,16 @@
 
 ## Open Data
 * Actia box
-..- Velocity
-..- Fuel Consumption
+..* Velocity
+..* Fuel Consumption
 
 * Trafikverket (actually SMHI though)
-..- Speedlimits
-..- Road conditions
+..* Speedlimits
+..* Road conditions
 
 * Combined
-..- Score based on parameters from the box such as distance of the trip, fuel consumed, speed combined with speedlimits from trafikverket 
-..- Velocity stats based on road conditions, speed limit and speed.
+..* Score based on parameters from the box such as distance of the trip, fuel consumed, speed combined with speedlimits from trafikverket 
+..* Velocity stats based on road conditions, speed limit and speed.
 
 ## Contributions
 

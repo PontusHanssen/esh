@@ -15,9 +15,10 @@ export default class Trip extends Component {
   render(){
     return(
       <Col l={4} s={6} m={4}>
-        <Card header={
-          <CardTitle style={{color: "#000"}} image={this.trip.img}><p style={{color: '#000'}}>{this.trip.points} points</p></CardTitle>
+        <Card className={'card2'} header={
+          <CardTitle style={{color: "#000"}} image={this.trip.img}><p style={{color: '#000'}}>Last Trip</p></CardTitle>
         }
+        actions={[<a href='#'>Previous Trip</a>, <a href="#">Next Trip</a>]}
       >
         <ul>
           <li><i className="material-icons" style={{'vertical-align': 'middle'}}>event</i>{this.trip.time}</li>

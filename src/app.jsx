@@ -46,7 +46,7 @@ class App extends Component {
           <li>
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle', 'padding-left': 30}}>person</i>
             test@test.com
-            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>arrow_drop_down</i>
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle', 'padding-left': 40}}>arrow_drop_down</i>
           </li>
           <li><div className="divider"></div></li>
           <li>
