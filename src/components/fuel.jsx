@@ -10,11 +10,8 @@ export default class Fuel extends Component {
   
     return (
       <Col s={12} m={10} l={8}>
-      <Card header={
-        <CardTitle style={{height: "150px", overflow: "hidden"}} image={
-            "http://www.publicdomainpictures.net/pictures/50000/velka/fuel-gauge.jpg"
-          }> Fuel Consumption</CardTitle>}>
-
+      <Card actions={[<a href='#'>Previous week</a>, <a href='#'>Next week</a>]}>
+        <h3>Fuel Consumption</h3>
         <ResponsiveContainer height={200}>
         <AreaChart data={data}
           margin={{ top: 20, right: 50, left: 5, bottom: 5 }}>
@@ -22,7 +19,7 @@ export default class Fuel extends Component {
           <YAxis />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          <Area type="monotone" dataKey="value" stroke="#8884d8" />
+          <Area fill="#1e88e5" type="monotone" dataKey="value" stroke="#0d47a1" />
         </AreaChart>
         </ResponsiveContainer>
       </Card>

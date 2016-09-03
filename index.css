@@ -1,6 +1,6 @@
 .points-card{
-	width: 80%;
-	height: 400px;
+	width: 100%;
+	height: 400px; 
 	margin:auto;
 }
 
@@ -10,7 +10,7 @@
 }
 
 h2{
-	color: white;
+	color: black;
 }
 
 .main {
@@ -57,5 +57,8 @@ a.button-collapse.top-nav i {
 }
 
 nav .nav-wrapper {
+	text-align: center;
+}
+.center-text{
 	text-align: center;
 }
