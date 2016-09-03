@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute, Router, Route, hashHistory, Link } from 'react-router';
-import { NavItem } from 'react-materialize';
+import { } from 'react-materialize';
+import activeComponent from 'react-router-active-component'
 import Dashboard from './components/Dashboard';
 import Timeline from './components/timeline';
+
+let NavItem = activeComponent('li')
 
 
 class App extends Component {
@@ -46,8 +49,8 @@ class App extends Component {
             <i className="material-icons" style={{'vertical-align': 'middle'}}>arrow_drop_down</i>
           </li>
           <li><div className="divider"></div></li>
-          <li><a href="">Dashboard</a></li>
-          <li><a href="">Timeline</a></li>
+          <li><NavItem to="/" onlyActiveOnIndex>Dashboard</NavItem></li>
+          <li><NavItem to="/timeline">Timeline</NavItem></li>
           <li><a href="">Social</a></li>
           <li><a href="">Trophies</a></li>
           <li><a href="">Car info</a></li>
@@ -68,7 +71,7 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Dashboard} />
-      <Route path="test" component={Timeline} />
+      <Route path="timeline" component={Timeline} />
     </Route>
 
   </Router>
