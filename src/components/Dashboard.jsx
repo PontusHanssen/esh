@@ -5,6 +5,7 @@ import Trip from './Trip';
 import Points from './points';
 import Velocity from './velocity';
 import { trips } from '../data/trips';
+import CircleCard from './circlecard';
 
 export default class Dashboard extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class Dashboard extends Component {
           <Trip trip={trips[0]}/>
           <Fuel />
         <Points></Points>
+        <CircleCard />
         </Row>
 
       </div>

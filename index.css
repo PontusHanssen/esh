@@ -1,6 +1,6 @@
 .points-card{
 	width: 100%;
-	height: 400px; 
+	height: 400px;
 	margin:auto;
 }
 
@@ -61,4 +61,9 @@ nav .nav-wrapper {
 }
 .center-text{
 	text-align: center;
+}
+
+.recharts-wrapper {
+	margin-left: auto;
+	margin-right: auto;
 }
