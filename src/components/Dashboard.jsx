@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Row } from 'react-materialize';
 import Fuel from './fuel';
 import Trip from './Trip';
-//import Points from './points';
+//import Fuel from './fuel';
+import Points from './points';
 
 export default class Dashboard extends Component {
   render() {
@@ -13,8 +14,9 @@ export default class Dashboard extends Component {
           <Trip />
 		  <Fuel />
         </Row>
+        <Points></Points>
       </div>
     );
-   
+  
   }
 }
