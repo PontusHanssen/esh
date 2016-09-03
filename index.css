@@ -71,8 +71,9 @@ nav .nav-wrapper {
 }
 
 @media only screen and (min-width: 978px){
-.main {
-	padding-left: 240px;
+	.main {
+		padding-left: 240px;
+	}
 }
 
 .sidebar-icons {
