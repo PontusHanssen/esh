@@ -4,19 +4,20 @@ import Fuel from './fuel';
 import Trip from './Trip';
 //import Fuel from './fuel';
 import Points from './points';
+import { trips } from '../data/trips';
 
 export default class Dashboard extends Component {
   render() {
-    
-	return (
+
+    return (
       <div style={{width: '80%', margin: 'auto'}}>
         <Row className={'dashboardGrid'}>
-          <Trip />
-		  <Fuel />
+          <Trip trip={trips[0]}/>
+          <Fuel />
         </Row>
         <Points></Points>
       </div>
     );
-  
+
   }
 }

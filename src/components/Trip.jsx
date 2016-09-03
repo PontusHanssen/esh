@@ -14,7 +14,7 @@ export default class Trip extends Component {
 
   render(){
     return(
-      <Col l={6} s={12} m={6}>
+      <Col l={12} s={12} m={12}>
         <Card header={
           <CardTitle style={{color: "#000"}} image={this.trip.img}></CardTitle>
         }
