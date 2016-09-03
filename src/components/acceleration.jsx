@@ -32,7 +32,6 @@ export default class Acceleration extends Component {
       <Row>
         <Col s={12} l={12} m={12}>
           <Card>
-            {console.log(this.state.conditions)}
           </Card>
         </Col>
       </Row>
