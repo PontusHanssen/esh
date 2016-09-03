@@ -7,11 +7,11 @@
 ..- Velocity
 ..- Fuel Consumption
 
-*Trafikverket (actually SMHI though)
+* Trafikverket (actually SMHI though)
 ..- Speedlimits
 ..- Road conditions
 
-*Combined
+* Combined
 ..- Score based on parameters from the box such as distance of the trip, fuel consumed, speed combined with speedlimits from trafikverket 
 ..- Velocity stats based on road conditions, speed limit and speed.
 
@@ -30,7 +30,7 @@
 * Decrease driven distance over time
 * Decrease fuel consumption
 
-## Components
+## NEW Components
 * Warning module:  slippery roads, road construction, accidents, queues SAFETY
 * Fuel consumption per km per day ENVIRONMENT
 * Distance driven each day over time, much like the fuel consumption graph ENVIROMENT
