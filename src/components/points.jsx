@@ -12,15 +12,14 @@ export default class Points extends Component {
 
 	render() {
 		return (
-			<div>
+			<Cell col={4} phone={12} tablet={6}>
 				<Card className="points-card">
 					<CardTitle className="points-cardtitle">
-						<Grid>
+						
 								<h2>Highscore</h2>
-						</Grid>
+						
 						
 					</CardTitle>
-					<Grid>
 					<DataTable rows={[
         			{name: 'Ola', points: 100},
         			{name: 'Tova', points: 99},
@@ -31,9 +30,8 @@ export default class Points extends Component {
     					<TableHeader numeric name="points">Points</TableHeader>
     					
 						</DataTable>
-						</Grid>
 				</Card>
-			</div>
+			</Cell>
 			);
 	}
 }

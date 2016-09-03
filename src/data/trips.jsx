@@ -1,4 +1,5 @@
-export  let trips = [
+export let trips = [
+
   {"time": "2016-08-01 08:00:00",
     "distance": "10000.2", 
     "duration": "15", 
@@ -77,6 +78,7 @@ export  let trips = [
     "consumption": 0.51,
     "rpm": 2004,
     "hardBreaks": 2,
+    "points":312
   },
   {"time": "2016-08-04 08:00:00",
     "distance": "10000.2", 
@@ -96,6 +98,7 @@ export  let trips = [
     "consumption": 0.51,
     "rpm": 2004,
     "hardBreaks": 2,
+    "points":123
   },
   {"time": "2016-08-05 08:00:00",
     "distance": "10000.2", 
@@ -115,6 +118,7 @@ export  let trips = [
     "consumption": 0.51,
     "rpm": 2004,
     "hardBreaks": 2,
+    "points": 234,
   },
   {"time": "2016-08-07 08:00:00",
     "distance": "10000.2", 
@@ -134,5 +138,6 @@ export  let trips = [
     "consumption": 0.51,
     "rpm": 2004,
     "hardBreaks": 2,
+    "points": 99
   },
 ];
