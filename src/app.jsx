@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute, Router, Route, hashHistory, Link } from 'react-router';
-import { } from 'react-materialize';
+import { Badge } from 'react-materialize';
 import activeComponent from 'react-router-active-component'
 import Dashboard from './components/Dashboard';
 import Timeline from './components/timeline';
@@ -44,17 +44,41 @@ class App extends Component {
             </div>
           </li>
           <li>
-            <i className="material-icons" style={{'vertical-align': 'middle', 'padding-left': 20, 'padding-right': 5}}>person</i>
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle', 'padding-left': 30}}>person</i>
             test@test.com
-            <i className="material-icons" style={{'vertical-align': 'middle'}}>arrow_drop_down</i>
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>arrow_drop_down</i>
           </li>
           <li><div className="divider"></div></li>
-          <li><NavItem to="/" onlyActiveOnIndex>Dashboard</NavItem></li>
-          <li><NavItem to="/timeline">Timeline</NavItem></li>
-          <li><a href="">Social</a></li>
-          <li><a href="">Trophies</a></li>
-          <li><a href="">Car info</a></li>
-          <li><a href="">Settings</a></li>
+          <li>
+            <NavItem to="/" onlyActiveOnIndex>
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>dashboard</i>
+            Dashboard
+          </NavItem></li>
+          <li><NavItem to="/timeline">
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>timeline</i>
+            Timeline
+          </NavItem></li>
+          <li><a href="">
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>drive_eta</i>
+            Driving
+          </a></li>
+          <li><a href="">
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>group</i>
+            <span>Social
+            <Badge className="new-icon" newIcon>4</Badge></span>
+          </a></li>
+          <li><a href="">
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>star</i>
+            Trophies
+          </a></li>
+          <li><a href="">
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>toc</i>
+            Car info
+          </a></li>
+          <li><a href="">
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>settings</i>
+            Settings
+          </a></li>
         </ul>
       </header>
         <div className="main">
