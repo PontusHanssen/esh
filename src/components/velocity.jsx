@@ -1,18 +1,43 @@
 import React, { Component } from 'react';
 import {Card, Col} from 'react-materialize';
+import request from 'superagent';
+import {trips} from '../data/trips';
 
 export default class Velocity extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {'velocity': 90, 'maxVelocity': 90};
+    this.state = {'velocity': 90, 'maxVelocity': 90, 'conditions': []};
     this.velocityOk = this.state.velocity <=  this.state.maxVelocity;
   }
 
   componentDidMount() {
+    let indexMapPoint = 0;
+    let data = [];
+    let randomtrip =  Math.floor(Math.random() * (7));
+
     this.velocityTimer = setInterval(() => {
      var speed =  Math.floor(Math.random() * (99 - 91)) + 91;
      this.velocityOk = this.state.velocity <=  speed;
+      
+      //Generate random trip.
+     //Get map points, loop through one point per step
+
+     let mappoint = trips[randomtrip].mapPoints[indexMapPoint];  
+
+     indexMapPoint = indexMapPoint + 1; //KAN BUGGA SÅ LOOPA INTE FÖR LÅNGT!!!!1
+
+    request.get('http://opendata-download-metfcst.smhi.se/api/category/pmp2g/version/2/geotype/point/lon/'+ mappoint.long + '/lat/'+ mappoint.lat + '/data.json')
+      .then((res) => {
+        data = JSON.parse(res.text); 
+        let conditions =[];
+        data.timeSeries.forEach(function(forecast){
+          conditions.push(forecast.parameters[18].values[0]); //Wsymb see http://opendata.smhi.se/apidocs/metanalys/parameters.html#parameter-wsymb
+        });
+        this.setState({'conditions': conditions});
+      });
+
+     //Get condition for that coordinate
      this.setState({'velocity': speed}); 
     }, 5000);
     this.maxSpeedTimer = setInterval(() => {
@@ -30,6 +55,15 @@ export default class Velocity extends Component {
   render() {
     var message = ""; 
     var friction = 0.8;
+    
+    if(this.state.conditions[0]<3){
+      friction = 0.1;
+    }else if(this.state.conditions[0]<7){
+      friction = 0.4;
+    }else{
+      friction = 0.8;
+    }
+    
     var distance = 10;
     var reactionTime = 1; 
     var actualStoppingTime = (reactionTime*this.state.velocity/3.6 + Math.pow(this.state.velocity, 2)/250*friction);
