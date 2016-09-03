@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-materialize';
-//import Trip from './Trip';
-//import Fuel from './fuel';
+import { Row } from 'react-materialize';
+import Fuel from './fuel';
+import Trip from './Trip';
 //import Points from './points';
 
 export default class Dashboard extends Component {
   render() {
-    /*
-    return (
+    
+	return (
       <div style={{width: '80%', margin: 'auto'}}>
-        <Grid className={'dashboardGrid'}>
+        <Row className={'dashboardGrid'}>
           <Trip />
-          <Fuel />
-          <Points />
-        </Grid>
+		  <Fuel />
+        </Row>
       </div>
     );
-    */
-   return (<div>works</div>);
+   
   }
 }
