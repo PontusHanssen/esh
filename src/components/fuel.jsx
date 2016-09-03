@@ -25,6 +25,7 @@ export default class Fuel extends Component {
           <Area type="monotone" dataKey="value" stroke="#8884d8" />
         </AreaChart>
         </ResponsiveContainer>
+        <Button className='light-blue darken-4'>Previous week</Button>  <Button className='light-blue darken-4'>Next week</Button>
       </Card>
     </Col>
     );
