@@ -19,6 +19,7 @@ export default class Dashboard extends Component {
         <Points></Points>
         <Acceleration />
         </Row>
+      </div>
       );
   }
 }
