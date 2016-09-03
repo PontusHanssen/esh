@@ -82,7 +82,7 @@ export default class Velocity extends Component {
 
     //Change message directly, as of now it can be 
     return (
-      <Col s={12} m={10} l={10}>
+      <Col s={12} m={12} l={10}>
       <Card>
       {message} 
       </Card>

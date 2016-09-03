@@ -25,7 +25,7 @@ export default class CircleCard extends Component {
 
   render() {
     return (
-      <Col s={6} m={4} l={4}>
+      <Col s={12} m={12} l={4}>
       <Card>
       <h4>{this.props.title}</h4>
       <span style={{position: 'absolute', 'text-align': 'center', width: '90%', 'margin-top': 95}}>{ Math.floor(((90 - this.state.percent)/360)* 100)}%</span>
