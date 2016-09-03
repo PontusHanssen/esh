@@ -21,7 +21,7 @@ export default class Velocity extends Component {
 
   render() { 
     return (
-      <Col s={12} m={10} l={8}>
+      <Col s={6} m={3} l={3}>
       <Card>
         <h1>{this.state.velocity}</h1>
       </Card>

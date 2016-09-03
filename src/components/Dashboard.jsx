@@ -12,16 +12,13 @@ import CircleCard from './circlecard';
 export default class Dashboard extends Component {
   render() {
     return (
-      <div style={{width: '80%', margin: 'auto'}}>
         <Row className={'dashboardGrid'}>
           <Velocity />
           <Trip trip={trips[0]}/>
           <Fuel />
-        <Points></Points>
+        <Points />
         <CircleCard />
-        <Acceleration />
         </Row>
-      </div>
       );
   }
 }

@@ -13,8 +13,10 @@ h2{
 	color: black;
 }
 
-.main {
-	padding-left: 240px;
+
+.main > .container {
+  width: 95% !important;
+
 }
 
 nav {
@@ -66,4 +68,9 @@ nav .nav-wrapper {
 .recharts-wrapper {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media only screen and (min-width: 978px){
+.main {
+	padding-left: 240px;
 }
