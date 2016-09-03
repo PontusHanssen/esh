@@ -5,6 +5,7 @@ import { Content, Drawer, Header, Layout, Navigation } from 'react-mdl';
 import Dashboard from './components/Dashboard';
 import Trip from './components/Trip';
 
+
 class App extends Component {
 
   render() {
@@ -21,7 +22,7 @@ class App extends Component {
           </Header>
           <Drawer title="Title">
             <Navigation>
-              <a href="">Link</a>
+              <a href="">Testing </a>
               <a href="">Link</a>
               <a href="">Link</a>
               <a href="">Link</a>
@@ -42,5 +43,6 @@ ReactDOM.render((
       <IndexRoute component={Dashboard} />
       <Route path="test" component={Trip} />
     </Route>
+
   </Router>
 ), document.getElementById('root'));
