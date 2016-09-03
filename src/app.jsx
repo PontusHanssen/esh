@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { IndexRoute, Router, Route, hashHistory, Link } from 'react-router';
 import { Navbar } from 'react-materialize';
 import Dashboard from './components/Dashboard';
-//import Trip from './components/Trip';
+import Timeline from './components/timeline';
 
 
 class App extends Component {
@@ -61,6 +61,7 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Dashboard} />
+      <Route path="test" component={Timeline} />
     </Route>
 
   </Router>

@@ -10,14 +10,11 @@ export default class Trip extends Component {
           }></CardTitle>
         }
         >
-          <h1>15 min trip</h1>
-          <h4>
           2016-09-03 10:03 <br />
           15 min Trip<br />
           10 km <br />
           Fuel 0.5 l/km <br />
           <strong>Points: 257 </strong>
-        </h4>
         </Card>
       </Col>
 
