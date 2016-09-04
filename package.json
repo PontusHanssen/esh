@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "node src/server/index.js",
+    "build": "webpack --config webpack.prod.config.js",
     "lint": "eslint src"
   },
   "repository": {

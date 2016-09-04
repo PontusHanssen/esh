@@ -31,7 +31,7 @@ export default class Trip extends Component {
             <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">schedule</i>{this.trip.duration} minutes
           </Col>
           <Col l={12} m={6} s={6}>
-            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">place</i>{this.trip.distance} km 
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">place</i>{this.trip.distance} km
           </Col>
           <Col l={12} m={6} s={6}>
             <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">ev_station</i>{this.trip.consumption} l/km

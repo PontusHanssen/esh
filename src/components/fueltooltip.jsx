@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 
 export const FuelTooltip = (props) => {
-  console.log(props);
   if (props.active) {
     return (
       <div className="custom-tooltip">
