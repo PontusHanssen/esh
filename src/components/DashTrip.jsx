@@ -36,7 +36,7 @@ export default class Trip extends Component {
           <Col l={12} m={6} s={6}>
             <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">ev_station</i>{this.trip.consumption} l/km
           </Col>
-          <Col l={12} m={6} s={6}>
+          <Col l={12} m={6} s={6} className="hide-on-large-only">
           </Col>
           <Col l={12} m={6} s={6}>
             <strong><i style={{'vertical-align': 'middle'}} className="material-icons trip-li">star</i>{this.trip.points} points</strong>
