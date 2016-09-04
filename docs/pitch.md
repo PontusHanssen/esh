@@ -3,9 +3,9 @@
 We know for a fact that over 1000 000 people die every year in car related accidents and
 we know that driving is the major source of pollution.
 
-To drive safer and more eco-friendly we have created Curbit - FitBit - but for cars.
+To help people drive safer and more eco-friendly we have created Curbit - FitBit - but for cars.
 
-CurBit visualizes driving statistics collected by Actia's ACU-III box. 
+CurBit visualizes driving statistics collected by Actia's ACU-III box, that is hooked in the car. 
 We combine real-time data from the box with open data from Trafikverket and SMHI, 
 such as road condition and weather 
 in order to alert drivers and encourage them to drive more safe and eco-friendly
