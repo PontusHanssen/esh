@@ -2,7 +2,7 @@
   height: 425px !important;
 }
 
-.card1 { 
+.card1 {
   height: 322px;
 }
 
@@ -159,6 +159,10 @@ header {
   font-size:48px;
 }
 
+.timeline-div > img {
+  width: 100%;
+}
+
 .circleJerk {
   border: 30px solid #0088FE;
   border-radius: 50%;
@@ -188,4 +192,15 @@ header {
   font-size: 80px;
   left: -0px;
   text-align: center;
+}
+
+.custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #f5f5f5;
+  width: 140px;
+  padding: 10px;
+}
+
+.custom-tooltip > .day {
+  font-weight: bold;
 }

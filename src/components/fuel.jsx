@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {Card, CardTitle, CardPanel, Button, Col} from 'react-materialize';
 import {AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Area, ResponsiveContainer} from 'recharts';
+import {FuelTooltip} from './fueltooltip';
 
 
 export default class Fuel extends Component {
-  render() { 
+  render() {
 
-    var data = [{name: 'Monday', consumed: 7.0, consumedperkm: 0.6}, {name: 'Tuesday', consumed: 8.3, consumedperkm: 0.9}, {name: 'Wednesday', consumed: 7.8, consumedperkm: 4.3}, 
+    var data = [{name: 'Monday', consumed: 7.0, consumedperkm: 0.6}, {name: 'Tuesday', consumed: 8.3, consumedperkm: 0.9}, {name: 'Wednesday', consumed: 7.8, consumedperkm: 4.3},
       {name: 'Thursday', consumed: 15.0, consumedperkm: 0.4}, {name: 'Friday', consumed: 11.2, consumedperkm: 0.3}, {name: 'Saturday', consumed: 9.3, consumedperkm: 0.4}, {name: 'Sunday', consumed: 12.0, consumedperkm: 1}];
 
 
@@ -28,17 +29,14 @@ export default class Fuel extends Component {
               </defs>
               <XAxis hide={true} dataKey="name"/>
               <YAxis hide={true} />
-              <Tooltip />
+              <Tooltip content={<FuelTooltip />}/>
               <Area type="monotone" dataKey="consumed" stroke="#fff" fillOpacity={1} fill="url(#grad)" dot={{ stroke: '#fff', strokeWidth: 3 }} />
               <Area type="monotone" dataKey="consumedperkm" stroke="#fff" fillOpacity={1} fill="url(#gradi)" dot={{ stroke: '#fff', strokeWidth: 3 }} />
 
             </AreaChart>
           </ResponsiveContainer>
-
         </Card>
       </Col>
     );
   }
 }
-
-
