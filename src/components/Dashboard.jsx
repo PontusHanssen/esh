@@ -13,11 +13,12 @@ export default class Dashboard extends Component {
   render() {
     return (
         <Row className={'dashboardGrid'}>
-          <Velocity />
-          <Trip trip={trips[0]}/>
+          <Trip trip={trips}/>
           <Fuel />
         <Points />
-        <CircleCard />
+        <CircleCard title="Level n stuff" fill="#82ca9d" startValue={0} />
+        <CircleCard title="Other n stuff" fill="#FF8042" startValue={60} />
+        <CircleCard title="All the stuff" fill="#0088FE" startValue={40} />
         </Row>
       );
   }

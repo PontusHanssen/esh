@@ -11,6 +11,10 @@
 ..* Speedlimits
 ..* Road conditions
 
+* Google API
+..* Accidents, construction, queues
+..* Road maps
+
 * Combined
 ..* Score based on parameters from the box such as distance of the trip, fuel consumed, speed combined with speedlimits from trafikverket 
 ..* Velocity stats based on road conditions, speed limit and speed.
@@ -34,4 +38,5 @@
 * Warning module:  slippery roads, road construction, accidents, queues SAFETY
 * Fuel consumption per km per day ENVIRONMENT
 * Distance driven each day over time, much like the fuel consumption graph ENVIROMENT
+* Acceleration 0 to some speed and some speed to 0, eco driving
 

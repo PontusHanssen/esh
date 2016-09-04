@@ -9,8 +9,8 @@ export default class Fuel extends Component {
       {name: 'thur', value: 15.0}, {name: 'fri', value: 11.2}, {name: 'sat', value: 9.3}, {name: 'sun', value: 12.0}];
 
     return (
-      <Col s={6} m={4} l={4}>
-        <Card className={'card2'} actions={[<a href='#'>Previous week</a>, <a href='#'>Next week</a>]} title="Fuel Consumption">
+      <Col s={12} m={12} l={4}>
+        <Card className={'card2'} actions={[<a href='#'>Previous week</a>, <span className={"pull-right"}><a href='#'>Next week</a></span>]} title="Fuel Consumption">
           <ResponsiveContainer height={200}>
             <AreaChart data={data}
               margin={{ top: 20, right: 50, left: 5, bottom: 5 }}>
