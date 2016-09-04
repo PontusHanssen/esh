@@ -11,6 +11,7 @@ import { trips } from '../data/trips';
 import CircleCard from './circlecard';
 import CircleCardStatic from './circlecardstatic';
 import LevelCard from './levelcard';
+import AverageFule from './avgFuel';
 export default class Dashboard extends Component {
   render() {
     return (
@@ -21,9 +22,10 @@ export default class Dashboard extends Component {
 
         <Points />        
 
-        <CircleCardStatic title="Fuel Consumption" text={'Your fuel consumption is lower than 86% of Linköping.'} fill="#82ca9d" startValue={300} />
+        <CircleCardStatic title="Fuel Consumption" text={'Your average fuel consumption is lower than 86% of Linköping.'} fill="#82ca9d" startValue={300} />
         <CircleCard title="Level Progress" text={'Your progress towards next level is shown here.'} fill="#FF8042" startValue={60} />
         <LevelCard title="Level"/>
+        <AverageFule />
         </Row>
       );
   }
