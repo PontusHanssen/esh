@@ -6,6 +6,7 @@ import activeComponent from 'react-router-active-component'
 import Dashboard from './components/Dashboard';
 import Timeline from './components/timeline';
 import Driving from './components/driving';
+import Trophies from './components/throphies';
 
 let NavItem = activeComponent('li')
 
@@ -68,10 +69,11 @@ class App extends Component {
             <span>Social
             <Badge className="new-icon" newIcon>4</Badge></span>
           </a></li>
-          <li><a href="#">
+          <li>
+            <NavItem to="/trophies" onlyActiveOnIndex>
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>star</i>
             Trophies
-          </a></li>
+          </NavItem></li>
           <li><a href="#">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>toc</i>
             Car info
@@ -98,6 +100,7 @@ ReactDOM.render((
       <IndexRoute component={Dashboard} />
       <Route path="timeline" component={Timeline} />
       <Route path="driving" component={Driving} />
+      <Route path="trophies" component={Trophies} />
     </Route>
 
   </Router>

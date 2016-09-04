@@ -223,3 +223,7 @@ header {
 tripRow > .col > strong {
   font-size: 20px;
 }
+
+.cardTrophy{
+  min-height: 150px;
+}
