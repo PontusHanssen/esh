@@ -46,8 +46,8 @@ class App extends Component {
           </li>
           <li>
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle', 'padding-left': 30}}>person</i>
-            test@test.com
-            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle', 'padding-left': 40}}>arrow_drop_down</i>
+            eva@demo.com
+            <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle', 'padding-left': 30}}>arrow_drop_down</i>
           </li>
           <li><div className="divider"></div></li>
           <li>
@@ -57,7 +57,7 @@ class App extends Component {
           </NavItem></li>
           <li><NavItem to="/timeline">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>timeline</i>
-            Timeline
+            Trips
           </NavItem></li>
           <li><NavItem to="/driving">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>drive_eta</i>

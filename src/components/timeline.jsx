@@ -18,7 +18,7 @@ export default class Timeline extends Component{
 
     return (
       <div style={{width: "80%", margin: "auto"}}>
-        <h3>Timeline</h3>
+        <h3>Trips</h3>
         <Collapsible>
           {this.tripComponents}
         </Collapsible>
