@@ -25,7 +25,7 @@ export default class Warning extends Component {
       let mappoint = trips[randomtrip].mapPoints[indexMapPoint];  
       indexMapPoint = indexMapPoint + 1; 
 
-      if(indexMapPoint>=mappoint.length){
+      if(indexMapPoint>=75){ //75 points for each trip
         indexMapPoint = 0;
       }
 

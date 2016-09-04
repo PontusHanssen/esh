@@ -20,11 +20,9 @@ export default class Velocity extends Component {
      
     let mappoint = trips[randomtrip].mapPoints[indexMapPoint];  
     indexMapPoint = indexMapPoint + 1; 
-    if(indexMapPoint>=76){
+    if(indexMapPoint>=75 ){ //75 Points for each trip.
       indexMapPoint = 0;
     }
-
-
     request.get('http://opendata-download-metfcst.smhi.se/api/category/pmp2g/version/2/geotype/point/lon/'+ mappoint.long + '/lat/'+ mappoint.lat + '/data.json')
       .then((res) => {
         data = JSON.parse(res.text); 
@@ -82,7 +80,7 @@ export default class Velocity extends Component {
     }
     else {
       message = <Row><Col l={6} s={7} m={7}>Stopping distance (m)<br/>
-        <div style={{'font-weight': 'black', 'font-size':'90px'}}>{Math.ceil(actualStoppingTime - possibleStoppingTime)}</div></Col>
+        <div style={{'font-weight': 'black', 'font-size':'90px'}}>{Math.ceil(actualStoppingTime + possibleStoppingTime)}</div></Col>
         <Col l={6} s={5} m={5}>Saved time (s)<br/>
         <div style={{'font-weight': 'black', 'font-size':'90px'}}>{Math.ceil(savedTime)}</div></Col>
         </Row>
