@@ -11,6 +11,10 @@
 ..* Speedlimits
 ..* Road conditions
 
+* Google API
+..* Accidents, construction, queues
+..* Road maps
+
 * Combined
 ..* Score based on parameters from the box such as distance of the trip, fuel consumed, speed combined with speedlimits from trafikverket 
 ..* Velocity stats based on road conditions, speed limit and speed.
