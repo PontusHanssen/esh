@@ -8,7 +8,7 @@ export default class AverageFuel extends Component {
 
   render() {
     return (
-      <Col s={6} m={6} l={4}>
+      <Col s={12} m={6} l={4}>
       <Card className={'card1'} title="Average Fuel Consumption">
       <span style={{'text-align': 'center', position: 'absolute', width: '90%', color: '#c0c0c0', 'font-size': '12px'}}>liter per 10 kilometer</span>
       <span style={{'font-weight': 'black', position: 'absolute', 'text-align': 'center', width: '90%', color: '#9c27b0', 'margin-top': '0px', 'font-size': '140px'}}>{avg}</span>

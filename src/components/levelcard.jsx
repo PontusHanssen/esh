@@ -7,7 +7,7 @@ export default class LevelCard extends Component {
 
   render() {
     return (
-      <Col s={6} m={6} l={4}>
+      <Col s={12} m={6} l={4}>
       <Card className={'card1'} title={this.props.title}>
         {this.props.text}
         <br />

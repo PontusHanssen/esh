@@ -10,6 +10,7 @@
   width: 100%;
   position: absolute !important;
   bottom: 0px !important;
+  background-color: rgba(0,0,0,0.6);
 }
 
 .card-graph > .card-content{
@@ -26,6 +27,10 @@
 }
 
 .card-graph > .card-content > .grey-text.text-darken-4 {
+  color: #fff !important;
+}
+
+.distance-card > .card-content > .grey-text.text-darken-4 {
   color: #fff !important;
 }
 
