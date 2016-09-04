@@ -1,5 +1,5 @@
 .card2 {
-  height: 410px !important;
+  height: 425px !important;
 }
 .card2 > .card-action {
   width: 100%;
@@ -30,6 +30,10 @@ h2{
 .main > .container {
   width: 95% !important;
 
+}
+
+.container .row {
+  margin: auto;
 }
 
 nav {
@@ -118,4 +122,11 @@ header {
 .dashtrip-ul > li {
   padding-bottom: 15px;
   font-size: 16px;
+}
+
+.h5-right {
+  padding-top:10px;
+  padding-left: 20px;
+  text-align: right;
+  font-size:48px;
 }
