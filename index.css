@@ -1,10 +1,28 @@
 .card2 {
   height: 410px !important;
 }
+
 .card2 > .card-action {
   width: 100%;
   position: absolute !important;
   bottom: 0px !important;
+}
+
+.card-graph > .card-content{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-graph > .card-content > .card-title{
+  padding-left: 20px;
+}
+
+.card-graph > .card-content > .grey-text {
+  color: #fff !important;
+}
+
+.card-graph > .card-content > .grey-text.text-darken-4 {
+  color: #fff !important;
 }
 
 .pull-right {
