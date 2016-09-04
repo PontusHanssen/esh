@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Card, CardTitle, Col} from 'react-materialize';
+import {Card, CardTitle, Col, Row} from 'react-materialize';
 
 export default class Trip extends Component {
   constructor(props){
@@ -23,20 +23,30 @@ export default class Trip extends Component {
         }
         actions={[<a onClick={() => this.setState({})}>Previous Trip</a>, <span className={"pull-right"}><a onClick={() => this.setState({})}>Next Trip</a></span>]}
       >
-        <ul className="dashtrip-ul">
-          <li><i className="material-icons trip-li">event</i>{this.trip.time}</li>
-          <li><i className="material-icons trip-li">schedule</i>{this.trip.duration} minutes</li>
-          <li><i className="material-icons trip-li">place</i>{this.trip.distance} km </li>
-          <li><i className="material-icons trip-li">ev_station</i>{this.trip.consumption} l/km</li>
-          <li><strong><i className="material-icons trip-li">star</i>{this.trip.points} points</strong></li>
-        </ul>
+        <Row className={'tripRow'}>
+          <Col l={12} m={6} s={6}>
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">event</i>{this.trip.time}
+          </Col>
+          <Col l={12} m={6} s={6}>
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">schedule</i>{this.trip.duration} minutes
+          </Col>
+          <Col l={12} m={6} s={6}>
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">place</i>{this.trip.distance} km 
+          </Col>
+          <Col l={12} m={6} s={6}>
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">ev_station</i>{this.trip.consumption} l/km
+          </Col>
+          <Col l={12} m={6} s={6}>
+          </Col>
+          <Col l={12} m={6} s={6}>
+            <strong><i style={{'vertical-align': 'middle'}} className="material-icons trip-li">star</i>{this.trip.points} points</strong>
+          </Col>
+        </Row>
       </Card>
+
     </Col>
 
 
     );
   }
 }
-
-
-58.384833, 15.542284

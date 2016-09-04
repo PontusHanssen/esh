@@ -204,3 +204,16 @@ header {
 .custom-tooltip > .day {
   font-weight: bold;
 }
+
+.tripRow {
+  font-size: 20px;
+}
+
+.tripRow > .col {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+tripRow > .col > strong {
+  font-size: 20px;
+}
