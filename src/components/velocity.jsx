@@ -72,16 +72,16 @@ export default class Velocity extends Component {
     var possibleStoppingTime = (reactionTime*this.state.maxVelocity/3.6 + Math.pow(this.state.maxVelocity,2)/250*friction);
     var savedTime = (distance/this.state.maxVelocity - distance/this.state.velocity)*360;
     if (this.velocityOk) {
-      message = <Row><Col l={8} m={12} s={12} style={{'padding-left':'0px'}}><div style={{'font-weight':
-      'black', 'font-size':'90px'}}>{Math.ceil(actualStoppingTime)} <span style={{'font-weight':'black','font-size':'30px'}}>m</span></div></Col></Row>
+      message = <Row><Col l={8} m={12} s={12} style={{'padding-left':'0px'}}><span style={{color:'transparent'}}>test</span> <br/><div style={{'font-weight':
+      'black', 'font-size':'90px'}}>{Math.ceil(actualStoppingTime)}<span style={{'font-weight':'black','font-size':'30px'}}>m</span></div></Col></Row>
       
       style = "#66bb6a";
       title="Stopping distance";
     }
     else {
       message = <Row><Col l={6} s={7} m={7}>Stopping distance (m)<br/>
-        <div style={{'font-weight': 'black', 'font-size':'90px'}}>{Math.ceil(actualStoppingTime + possibleStoppingTime)}</div></Col>
-        <Col l={6} s={5} m={5}>Saved time (s)<br/>
+        <div style={{'font-weight': 'black', 'font-size':'90px'}}>{Math.ceil(actualStoppingTime)}</div></Col>
+        <Col l={6} s={5} m={5}>Saved time per 10km (s)<br/>
         <div style={{'font-weight': 'black', 'font-size':'90px'}}>{Math.ceil(savedTime)}</div></Col>
         </Row>
       
@@ -91,7 +91,7 @@ export default class Velocity extends Component {
 
     return (
       <Col s={12} m={12} l={12}>
-      <Card style={{background: style, color:'#38435a', height:'200px'}} title={title}>
+      <Card style={{background: style, color:'#38435a', height:'245px'}} title={title}>
       {message} 
       </Card>
     </Col>
