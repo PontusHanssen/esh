@@ -9,7 +9,7 @@ export default class Warning extends Component {
     super(props);
     this.state={'conditions':[]};
   }
-
+/*
   componentDidMount(){
     let indexMapPoint = 0;
     let randomTrip = Math.floor(Math.random()* (7));
@@ -37,7 +37,7 @@ export default class Warning extends Component {
   componentWillUnmount(){
     clearInterval(this.requestTimer);
   }
-
+*/
   render() { 
     return (
       <Col s={12} m={12} l={12}>
