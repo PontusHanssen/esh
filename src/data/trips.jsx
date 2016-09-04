@@ -414,7 +414,7 @@ export let trips = [
     "consumption": 0.51,
     "rpm": 2004,
     "hardBreaks": 2,
-    "points": 261
+    "points": 352
   },
   {"time": "2016-08-05 08:00:00",
     "distance": "1.2", 
