@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Card, Col} from 'react-materialize';
+import {Card, Col, CardTitle, Row} from 'react-materialize';
 import request from 'superagent';
 import {trips} from '../data/trips';
 
@@ -65,25 +65,34 @@ export default class Velocity extends Component {
     }else{
       friction = 0.8;
     }
-          
+    
+    var style = "green";
+    var title = "";
     var distance = 10;
     var reactionTime = 1; 
     var actualStoppingTime = (reactionTime*this.state.velocity/3.6 + Math.pow(this.state.velocity, 2)/250*friction);
     var possibleStoppingTime = (reactionTime*this.state.maxVelocity/3.6 + Math.pow(this.state.maxVelocity,2)/250*friction);
     var savedTime = (distance/this.state.maxVelocity - distance/this.state.velocity)*360;
     if (this.velocityOk) {
-      message = <div><h4 style={{color: "green"}}>VELOCITY OK</h4></div>;
+      message = <div style={{'font-weight':
+      'black', 'font-size':'120px'}}>Driving good</div>
+      style = "#66bb6a";
+      title="Velocity Ok";
     }
     else {
-      message = <div><h4 style={{color: "red"}}>YOU ARE SPEEDING</h4>
-      Increased stopping distance (m): <h5>{Math.floor(actualStoppingTime - possibleStoppingTime)}</h5> 
-      Saved time driving 10 km (s): <h5>{Math.floor(savedTime)}</h5></div>;
+      message = <Row><Col l={4} s={4} m={4} style={{'padding-top':'114px', 'padding-right':'0px',}}>Increased stopping distance (m)</Col><Col l={2} m={2} s={2} style={{'padding-left':'0px'}}><div style={{'font-weight':
+      'black', 'font-size':'120px'}}>{Math.ceil(actualStoppingTime - possibleStoppingTime)}</div></Col>
+      <Col l={4} s={4} m={4} style={{'padding-top':'114px', 'padding-right':'0px'}}>Time saved driving 10 km (s)</Col><Col l={2} m={2} s={2} style={{'padding-left':'0px'}}><div style={{'font-weight':
+      'black', 'font-size':'120px'}}>{Math.ceil(savedTime)}</div></Col></Row>
+           
+      style = "#ee6e73";
+      title = "You Are Speeding";
     }
 
     //Change message directly, as of now it can be 
     return (
-      <Col s={12} m={12} l={10}>
-      <Card>
+      <Col s={12} m={12} l={12}>
+      <Card style={{background: style, color:'#38435a', height:'270px'}} title={title}>
       {message} 
       </Card>
     </Col>
