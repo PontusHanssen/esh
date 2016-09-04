@@ -6,8 +6,9 @@ export default class Driving extends Component {
   render() {
     return (
         <Row className={'dashboardGrid'}>
-          <Velocity />
           <Warning />
+          <Velocity />
+
         </Row>
       );
   }
