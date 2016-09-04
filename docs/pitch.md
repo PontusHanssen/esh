@@ -18,13 +18,9 @@ neglectable time you will save by speeding.
 Your achieved driving score can used by insurance companies, car rentals or employers 
 to prove that you are a responsible driver.
 
-Additional benefits 
-
 Once you have reached your destination our application enables you to compare and
 explore your own, and friends' trips. 
 This way, driving safe and enviroment-friendly 
 becomes a fun and social came - Now you can settle, once and for all,
 who is really the best driver?
 
-car in good shape
-enviroment
