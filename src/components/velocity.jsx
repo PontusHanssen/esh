@@ -40,7 +40,7 @@ export default class Velocity extends Component {
      var speed =  Math.floor(Math.random() * (95 - 66)) + 66;
      this.velocityOk = speed <=  this.state.maxVelocity;
      this.setState({'velocity': speed}); 
-    }, 3000);
+    }, 5000);
 
     this.maxSpeedTimer = setInterval(() => {
       var maxSpeed = Math.floor(Math.random() * (90 - 69)) + 69;
@@ -77,12 +77,8 @@ export default class Velocity extends Component {
       message = <Row><Col offset={'m1'} l={4} s={4} m={5} style={{'padding-top':'104px'}}>The stopping distance is now (m)</Col><Col l={6} m={6} s={6} style={{'padding-left':'0px'}}><div style={{'font-weight':
       'black', 'font-size':'110px'}}>{Math.ceil(actualStoppingTime)}</div></Col></Row>
       
-      /*
-      message = <div style={{'font-weight':
-      'black', 'font-size':'120px'}}>Driving good</div>
-      */
       style = "#66bb6a";
-      title="Velocity Ok";
+      title="Driving safe";
     }
     else {
       message = <Row><Col l={4} s={4} m={4} style={{'padding-top':'104px', 'padding-right':'0px'}}>Increased stopping distance (m)</Col><Col l={2} m={2} s={2} style={{'padding-left':'0px'}}><div style={{'font-weight':
@@ -94,7 +90,6 @@ export default class Velocity extends Component {
       title = "You Are Speeding";
     }
 
-    //Change message directly, as of now it can be 
     return (
       <Col s={12} m={12} l={12}>
       <Card style={{background: style, color:'#38435a', height:'270px'}} title={title}>

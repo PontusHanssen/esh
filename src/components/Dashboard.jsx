@@ -5,7 +5,6 @@ import Trip from './DashTrip';
 
 import Acceleration from './acceleration';
 import Points from './points';
-import Velocity from './velocity';
 import { trips } from '../data/trips';
 import CircleCard from './circlecard';
 import CircleCardStatic from './circlecardstatic';
@@ -14,7 +13,6 @@ export default class Dashboard extends Component {
   render() {
     return (
         <Row className={'dashboardGrid'}>
-        <Velocity />
           <Trip trip={trips}/>
           <Fuel />
         <Points />
