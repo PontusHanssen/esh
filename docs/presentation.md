@@ -34,4 +34,5 @@
 * Warning module:  slippery roads, road construction, accidents, queues SAFETY
 * Fuel consumption per km per day ENVIRONMENT
 * Distance driven each day over time, much like the fuel consumption graph ENVIROMENT
+* Acceleration 0 to some speed and some speed to 0, eco driving
 
