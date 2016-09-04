@@ -27,7 +27,7 @@ class App extends Component {
           <div className="container">
             <div className="nav-wrapper">
               <a className="page-title">
-                KurBit
+                CurBit
               </a>
             </div>
           </div>

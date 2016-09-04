@@ -41,7 +41,9 @@ nav.top-nav {
   box-shadow: none; }
   nav.top-nav a.page-title {
     line-height: 122px;
-    font-size: 36px; }
+    font-size: 36px;
+    border-bottom: 1px solid currentColor;
+    letter-spacing: 10px;}
 
 a.button-collapse.top-nav {
   position: absolute;
@@ -98,4 +100,22 @@ nav .nav-wrapper {
 	line-height: 20px !important;
 	margin-top: 22px;
 	background-color: #ff4081 !important;
+}
+
+header {
+  padding-left: 240px;
+}
+
+.top-nav > .container {
+  width: 90%;
+}
+
+.trip-li {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.dashtrip-ul > li {
+  padding-bottom: 15px;
+  font-size: 16px;
 }
