@@ -9,7 +9,7 @@ export default class Warning extends Component {
     super(props);
     this.state={'conditions':[]};
   }
-/*
+
   componentDidMount(){
     
     let indexMapPoint = 0;
@@ -25,7 +25,7 @@ export default class Warning extends Component {
       let mappoint = trips[randomtrip].mapPoints[indexMapPoint];  
       indexMapPoint = indexMapPoint + 1; 
 
-      if(indexMapPoint>=mappoint.length){
+      if(indexMapPoint>=75){ //75 points for each trip
         indexMapPoint = 0;
       }
 
@@ -44,13 +44,10 @@ export default class Warning extends Component {
   componentWillUnmount(){
     clearInterval(this.requestTimer);
   }
-*/
-  render() { 
 
-
+  render(){ 
     if(this.state.conditions[0]>=5){
       this.roadConditionOpacity = 1;
-      
     }else{
       this.roadConditionOpacity = 0.04;      
     }
