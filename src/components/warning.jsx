@@ -75,17 +75,17 @@ export default class Warning extends Component {
         <Card style={{height:'270px;'}} title="Warnings">
           <Row>
             <Col s={3} m={3} l={3}>
-              <img style={{'max-height':'200px', opacity: this.roadConditionOpacity}} src="../../slippery-road.png" alt="accident" className="responsive-img" />
+              <img style={{'max-height':'220px', opacity: this.roadConditionOpacity}} src="../../slippery-road.png" alt="accident" className="responsive-img" />
             </Col>
             <Col s={3} m={3} l={3}>
-              <img style={{'max-height':'200px', opacity: this.accidentOpacity}} src="../../accident.png" alt="" className="responsive-img" />
+              <img style={{'max-height':'220px', opacity: this.accidentOpacity}} src="../../accident.png" alt="" className="responsive-img" />
  
             </Col>
             <Col s={3} m={3} l={3}>
-              <img style={{'max-height':'200px', opacity: this.queueOpacity}} src="../../queue.png" alt="" className="responsive-img" />             
+              <img style={{'max-height':'220px', opacity: this.queueOpacity}} src="../../queue.png" alt="" className="responsive-img" />             
             </Col>
             <Col s={3} m={3} l={3}>
-              <img style={{'max-height':'200px', opacity: this.roadConstructionOpacity}} src="../../road-construction.png" alt="" className="responsive-img" />
+              <img style={{'max-height':'220px', opacity: this.roadConstructionOpacity}} src="../../road-construction.png" alt="" className="responsive-img" />
             </Col>
           </Row>
         </Card>
