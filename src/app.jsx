@@ -6,12 +6,13 @@ import activeComponent from 'react-router-active-component'
 import Dashboard from './components/Dashboard';
 import Timeline from './components/timeline';
 import Driving from './components/driving';
-<<<<<<< HEAD
+
 import SocialMedia from './components/socialMedia';
-=======
+import CarInfo from './components/carinfo';
+
 import Trophies from './components/throphies';
 
->>>>>>> 4a9e5b9edc6136ee26e650c9e5199acadf789ca3
+
 let NavItem = activeComponent('li')
 
 
@@ -80,10 +81,10 @@ class App extends Component {
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>star</i>
             Trophies
           </NavItem></li>
-          <li><a href="#">
+          <li><NavItem to="/carinfo">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>toc</i>
             Car info
-          </a></li>
+          </NavItem></li>
           <li><a href="#">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>settings</i>
             Settings
@@ -107,6 +108,7 @@ ReactDOM.render((
       <Route path="timeline" component={Timeline} />
       <Route path="driving" component={Driving} />
       <Route path="socialmedia" component={SocialMedia} />
+      <Route path="carinfo" component={CarInfo} />
       <Route path="trophies" component={Trophies} />
     </Route>
 
