@@ -1,5 +1,5 @@
 .card2 {
-  height: 410px !important;
+  height: 425px !important;
 }
 .card2 > .card-action {
   width: 100%;
@@ -30,6 +30,10 @@ h2{
 .main > .container {
   width: 95% !important;
 
+}
+
+.container .row {
+  margin: auto;
 }
 
 nav {
