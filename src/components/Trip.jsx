@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Card, CardTitle, Col} from 'react-materialize';
+import {Card, CardTitle, Col, Row} from 'react-materialize';
 
 export default class Trip extends Component {
   constructor(props){
@@ -16,13 +16,25 @@ export default class Trip extends Component {
     return(
       <Col l={4} s={6} m={4} className="timeline-div">
         <img src={this.trip.img} />
-        <ul>
-          <li><i className="material-icons" style={{'vertical-align': 'middle'}}>event</i>{this.trip.time}</li>
-          <li><i className="material-icons" style={{'vertical-align': 'middle'}}>schedule</i>{this.trip.duration} minutes</li>
-          <li><i className="material-icons" style={{'vertical-align': 'middle'}}>place</i>{this.trip.distance} km </li>
-          <li><i className="material-icons" style={{'vertical-align': 'middle'}}>ev_station</i>{this.trip.consumption} l/km</li>
-          <li><strong><i className="material-icons" style={{'vertical-align': 'middle'}}>star</i>{this.trip.points} points</strong></li>
-        </ul>
+        <Row className={'tripRow'}>
+          <Col l={6} m={6} s={6}>
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">event</i>{this.trip.time}
+          </Col>
+          <Col l={6} m={6} s={6}>
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">schedule</i>{this.trip.duration} minutes
+          </Col>
+          <Col l={6} m={6} s={6}>
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">place</i>{this.trip.distance} km
+          </Col>
+          <Col l={6} m={6} s={6}>
+            <i style={{'vertical-align': 'middle'}} className="material-icons trip-li">ev_station</i>{this.trip.consumption} l/km
+          </Col>
+          <Col l={6} m={6} s={6}>
+          </Col>
+          <Col l={6} m={6} s={6}>
+            <strong><i style={{'vertical-align': 'middle'}} className="material-icons trip-li">star</i>{this.trip.points} points</strong>
+          </Col>
+        </Row>
     </Col>
     );
   }
