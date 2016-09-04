@@ -13,7 +13,7 @@ export default class Dashboard extends Component {
   render() {
     return (
         <Row className={'dashboardGrid'}>
-          <Trip trip={trips[0]}/>
+          <Trip trip={trips}/>
           <Fuel />
         <Points />
         <CircleCard title="Level n stuff" fill="#82ca9d" startValue={0} />

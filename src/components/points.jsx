@@ -19,7 +19,7 @@ export default class Points extends Component {
     });
     return (
       <Row>
-        <Col s={12} m={4} l={4}>
+        <Col s={12} m={12} l={4}>
           <Card className='white card2' title='Highscore'>
             <Table centered bordered>
               <thead>
