@@ -20,7 +20,6 @@ export default class Velocity extends Component {
      
     let mappoint = trips[randomtrip].mapPoints[indexMapPoint];  
     indexMapPoint = indexMapPoint + 1; 
-
     if(indexMapPoint>=mappoint.length){
       indexMapPoint = 0;
     }
