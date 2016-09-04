@@ -37,7 +37,7 @@ export default class Velocity extends Component {
       });
 
      
-     var speed =  Math.floor(Math.random() * (99 - 66)) + 66;
+     var speed =  Math.floor(Math.random() * (95 - 66)) + 66;
      this.velocityOk = speed <=  this.state.maxVelocity;
      this.setState({'velocity': speed}); 
     }, 3000);
@@ -74,16 +74,21 @@ export default class Velocity extends Component {
     var possibleStoppingTime = (reactionTime*this.state.maxVelocity/3.6 + Math.pow(this.state.maxVelocity,2)/250*friction);
     var savedTime = (distance/this.state.maxVelocity - distance/this.state.velocity)*360;
     if (this.velocityOk) {
+      message = <Row><Col offset={'m1'} l={4} s={4} m={5} style={{'padding-top':'104px'}}>The stopping distance is now (m)</Col><Col l={6} m={6} s={6} style={{'padding-left':'0px'}}><div style={{'font-weight':
+      'black', 'font-size':'110px'}}>{Math.ceil(actualStoppingTime)}</div></Col></Row>
+      
+      /*
       message = <div style={{'font-weight':
       'black', 'font-size':'120px'}}>Driving good</div>
+      */
       style = "#66bb6a";
       title="Velocity Ok";
     }
     else {
-      message = <Row><Col l={4} s={4} m={4} style={{'padding-top':'114px', 'padding-right':'0px',}}>Increased stopping distance (m)</Col><Col l={2} m={2} s={2} style={{'padding-left':'0px'}}><div style={{'font-weight':
-      'black', 'font-size':'120px'}}>{Math.ceil(actualStoppingTime - possibleStoppingTime)}</div></Col>
-      <Col l={4} s={4} m={4} style={{'padding-top':'114px', 'padding-right':'0px'}}>Time saved driving 10 km (s)</Col><Col l={2} m={2} s={2} style={{'padding-left':'0px'}}><div style={{'font-weight':
-      'black', 'font-size':'120px'}}>{Math.ceil(savedTime)}</div></Col></Row>
+      message = <Row><Col l={4} s={4} m={4} style={{'padding-top':'104px', 'padding-right':'0px'}}>Increased stopping distance (m)</Col><Col l={2} m={2} s={2} style={{'padding-left':'0px'}}><div style={{'font-weight':
+      'black', 'font-size':'110px'}}>{Math.ceil(actualStoppingTime - possibleStoppingTime)}</div></Col>
+      <Col l={3} s={4} m={4} style={{'padding-top':'104px', 'padding-right':'0px', 'padding-left':'10px'}}>Time saved per 10 km (s)</Col><Col l={3} m={2} s={2} style={{'padding-left':'0px'}}><div style={{'font-weight':
+      'black', 'font-size':'110px'}}>{Math.ceil(savedTime)}</div></Col></Row>
            
       style = "#ee6e73";
       title = "You Are Speeding";

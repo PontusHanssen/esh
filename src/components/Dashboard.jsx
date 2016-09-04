@@ -14,6 +14,7 @@ export default class Dashboard extends Component {
   render() {
     return (
         <Row className={'dashboardGrid'}>
+        <Velocity />
           <Trip trip={trips}/>
           <Fuel />
         <Points />
