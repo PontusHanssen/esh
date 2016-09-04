@@ -24,8 +24,6 @@ export default class Trip extends Component {
           <li><strong><i className="material-icons" style={{'vertical-align': 'middle'}}>star</i>{this.trip.points} points</strong></li>
         </ul>
     </Col>
-
-
     );
   }
 }

@@ -63,20 +63,20 @@ class App extends Component {
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>drive_eta</i>
             Driving
           </NavItem></li>
-          <li><a href="">
+          <li><a href="#">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>group</i>
             <span>Social
             <Badge className="new-icon" newIcon>4</Badge></span>
           </a></li>
-          <li><a href="">
+          <li><a href="#">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>star</i>
             Trophies
           </a></li>
-          <li><a href="">
+          <li><a href="#">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>toc</i>
             Car info
           </a></li>
-          <li><a href="">
+          <li><a href="#">
             <i className="material-icons sidebar-icons" style={{'vertical-align': 'middle'}}>settings</i>
             Settings
           </a></li>
