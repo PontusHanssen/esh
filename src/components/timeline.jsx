@@ -8,8 +8,8 @@ export default class Timeline extends Component{
   constructor(props) {
     super(props);
     this.tripComponents = trips.map((trip) => (<CollapsibleItem header={`${trip.time} ${trip.distance} km`}><Trip trip={trip} /></CollapsibleItem>));
-    
-    
+
+
   }
 
   render(){
@@ -18,7 +18,7 @@ export default class Timeline extends Component{
 
     return (
       <div style={{width: "80%", margin: "auto"}}>
-        <h1>Timeline</h1>
+        <h3>Timeline</h3>
         <Collapsible>
           {this.tripComponents}
         </Collapsible>
@@ -26,4 +26,3 @@ export default class Timeline extends Component{
     );
   }
 }
-
