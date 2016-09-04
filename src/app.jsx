@@ -101,11 +101,8 @@ ReactDOM.render((
       <IndexRoute component={Dashboard} />
       <Route path="timeline" component={Timeline} />
       <Route path="driving" component={Driving} />
-<<<<<<< HEAD
       <Route path="carinfo" component={CarInfo} />
-=======
       <Route path="trophies" component={Trophies} />
->>>>>>> 4a9e5b9edc6136ee26e650c9e5199acadf789ca3
     </Route>
 
   </Router>
