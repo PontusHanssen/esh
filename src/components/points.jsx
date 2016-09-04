@@ -31,21 +31,21 @@ export default class Points extends Component {
               <tbody>
                 <tr>
                   <td><i className="material-icons" style={{'vertical-align': 'middle'}}>person_outline</i>Me</td>
-                  <td>{highscore[1]}</td>
+                  <td>{highscore[0]}</td>
                 </tr>
 
                 <tr>
                   <td>Daniel</td>
-                  <td>{highscore[2]}</td>
+                  <td>{highscore[1]}</td>
                 </tr>
                 <tr>
                   <td>Pontus</td>
-                  <td>{highscore[2]}</td>
+                  <td>{highscore[7]}</td>
                 </tr>
 
                 <tr>
                   <td>Tova</td>
-                  <td>{highscore[3]}</td>
+                  <td>{highscore[8]}</td>
                 </tr>
 
               </tbody>
