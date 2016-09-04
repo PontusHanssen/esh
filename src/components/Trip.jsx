@@ -41,4 +41,3 @@ export default class Trip extends Component {
 }
 
 
-58.384833, 15.542284
